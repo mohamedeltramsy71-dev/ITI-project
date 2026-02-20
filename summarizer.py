@@ -3,7 +3,7 @@ from langchain_groq import ChatGroq
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.prompts import PromptTemplate
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY", "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")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY", ".............")
 
 MAP_PROMPT = PromptTemplate(
     template="""Summarize this section of a legal/contract document concisely:
@@ -67,4 +67,5 @@ SUMMARY:"""
         "summary": final_response.content,
         "strategy": "map-reduce",
         "chunks_processed": len(chunks),
+
     }
