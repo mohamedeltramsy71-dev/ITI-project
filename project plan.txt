@@ -1,0 +1,19 @@
+smart_contract_assistant/
+├── .env
+├── requirements.txt
+├── main.py                 # Entry point
+├── src/
+│   ├── ingestion.py        # PDF/DOCX parsing + chunking + embedding
+│   ├── retrieval.py        # Vector store + semantic search
+│   ├── llm_pipeline.py     # Gemini LLM + guardrails + citations
+│   ├── summarizer.py       # Document summarization
+│   ├── evaluation.py       # RAG evaluation metrics
+│   └── utils.py            # Helper functions
+├── api/
+│   ├── server.py           # FastAPI + LangServe
+│   └── routes.py           # API endpoints
+├── ui/
+│   └── gradio_app.py       # Gradio interface
+├── tests/
+│   └── test_pipeline.py
+└── README.md
