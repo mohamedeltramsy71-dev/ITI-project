@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-GROQ_API_KEY = os.getenv("GROQ_API_KEY", "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")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY", "..........")
 
 def evaluate_answer(
     question: str,
@@ -156,4 +156,5 @@ def run_evaluation_suite(
         "avg_completeness": round(avg_completeness, 2),
         "avg_overall": round((avg_faithfulness + avg_relevance + avg_completeness) / 3, 2),
         "detailed_results": results,
+
     }
