@@ -5,7 +5,7 @@ from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain_chroma import Chroma
 from .retrieval import retrieve_relevant_chunks, format_context
-GROQ_API_KEY = os.getenv("GROQ_API_KEY", "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")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY", "...............")
 
 SYSTEM_PROMPT = """You are a professional Smart Contract & Legal Document Assistant.
 Your role:
@@ -90,4 +90,5 @@ def answer_question(
         "sources": sources,
         "blocked": False,
         "chunks_retrieved": len(retrieved),
+
     }
